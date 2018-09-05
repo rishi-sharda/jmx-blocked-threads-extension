@@ -1,0 +1,13 @@
+Use Case
+The JmxBlockedThreads monitoring extension gathers metrics for a BLOCKED, RUNNABLE & WAITING threads in a JVM and sends them to the AppDynamics Metric Browser.
+
+Installation
+1. Download and unzip the JmxBlockedThreads.zip file into the <machineagent install dir>/monitors/ directory.
+2. Configure the extension by referring to the below section.
+3. Restart the Machine Agent.
+
+Configuration
+Configure the JmxBlockedThreads Extension by editing the monitor.yml file in <MACHINE_AGENT_HOME>/monitors/LinuxMonitor/.
+Configure the PID of the JVM by editing the default value of <argument> tag under the <task-arguments> tag. Below is the sample:
+<argument name="pid" is-required="true" default-value="7050" />
+
